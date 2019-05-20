@@ -18,14 +18,14 @@ Resources:
           Properties:
             AuthType: ANONYMOUS
             Methods: ['POST', 'GET']
-  # expressGroup:
-  #   Type: 'Aliyun::Serverless::Api'
-  #   Properties:
-  #     StageName: RELEASE
-  #     DefinitionBody:
-  #       '/':
-  #         get:
-  #           x-aliyun-apigateway-api-name: expressApi
-  #           x-aliyun-apigateway-fc:
-  #             arn: acs:fc:::services/${{{ projectName }}-service.Arn}/functions/${{{ projectName }}.Arn}/
-  #             timeout: 10000
+  expressGroup:
+    Type: 'Aliyun::Serverless::Api'
+    Properties:
+      StageName: RELEASE
+      DefinitionBody:
+        '/':
+          get:
+            x-aliyun-apigateway-api-name: expressApi
+            x-aliyun-apigateway-fc:
+              arn: acs:fc:::services/${ {{ projectName }}-service.Arn}/functions/${ {{ projectName }}.Arn}/
+              timeout: 10000
