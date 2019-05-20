@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "fc/{{ projectName }}-service/{{ projectName }}",
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 3000,
+            "localRoot": "${workspaceFolder}/dist",
+            "remoteRoot": "/code",
+            "protocol": "inspector",
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "outFiles": ["${workspaceRoot}/dist/**/*.js", "${workspaceRoot}/node_modules/**/*.js"]     
+        }
+    ]
+}
