@@ -12,7 +12,7 @@
             "protocol": "inspector",
             "sourceMaps": true,
             "stopOnEntry": false,
-            "outFiles": ["${workspaceRoot}/dist/**/*.js", "${workspaceRoot}/node_modules/**/*.js"]     
+            "outFiles": ["${workspaceRoot}/dist/**/*.js"]     
         }
     ]
 }

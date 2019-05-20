@@ -24,8 +24,8 @@ Resources:
   #     StageName: RELEASE
   #     DefinitionBody:
   #       '/':
-  #         post:
+  #         get:
   #           x-aliyun-apigateway-api-name: expressApi
   #           x-aliyun-apigateway-fc:
-  #             arn: acs:fc:::services/${ {{ projectName }}-servive.Arn}/functions/${ {{ projectName }}.Arn}/
+  #             arn: acs:fc:::services/${{{ projectName }}-service.Arn}/functions/${{{ projectName }}.Arn}/
   #             timeout: 10000
