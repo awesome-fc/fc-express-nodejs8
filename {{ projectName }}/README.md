@@ -40,8 +40,8 @@ fun local start
 fun local start -d 3000
 ```
 
-程序会阻塞在这里，并不会继续往下执行。只有 vs code 的连接上来后，程序才会继续执行。接下通过 vs code 连上来，并开始调试，如下图所示：
-![debug-fc.gif](https://i.loli.net/2019/05/08/5cd29906b8bec.gif)
+如下图所示：
+![debug-fc-http.gif](https://i.loli.net/2019/05/21/5ce357e0c411644090.gif)
 
 
 ## 部署函数到云端
